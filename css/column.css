@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+}
+main {
+  min-height: 100%;
+  max-width: 935px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.card {
+  max-width: 935px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+    width: 87%;
+    margin: 70px auto;
+  }
+}
+.card .first {
+  flex-basis: calc(100% / 3);
+  background-color: hsl(31, 77%, 52%);
+  padding: 50px;
+}
+.card .second {
+  flex-basis: calc(100% / 3);
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+}
+.card .third {
+  flex-basis: calc(100% / 3);
+  background-color: hsl(179, 100%, 13%);
+  padding: 50px;
+}
+h1 {
+  color: hsl(0, 0%, 95%);
+  background: none;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 50px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  margin-bottom: 85px;
+  font-family: "Lexend Deca", sans-serif;
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.first button {
+  color: hsl(31, 77%, 52%);
+}
+.second button {
+  color: hsl(184, 100%, 22%);
+}
+.third button {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
