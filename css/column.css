@@ -19,10 +19,11 @@ main {
   border-radius: 10px;
   overflow: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 958px) {
   .card {
     flex-direction: column;
     width: 87%;
+    max-width: 330px;
     margin: 70px auto;
   }
 }
